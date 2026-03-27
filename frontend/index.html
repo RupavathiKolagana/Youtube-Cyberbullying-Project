@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberSafe AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="logo">🛡</h2>
+        <ul>
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('dashboard')">Dashboard</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- ================= HOME ================= -->
+        <section id="home" class="section active modern-home">
+
+            <div class="home-topbar">
+                <div class="brand">
+                    <span class="logo-dot"></span>
+                    <div>
+                        <strong><i>YouTube Saftey</i></strong>
+                        <small>Cyberbullying Detection</small>
+                    </div>
+                </div>
+
+                <div class="home-nav-links">
+                    <button class="open-btn" onclick="showSection('dashboard')">
+                        Open Dashboard
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-wrapper">
+
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        AI Powered Real-Time Monitoring
+                    </div>
+
+                    <h1>
+                        Detect abusive content on YouTube
+                        in real time.
+                    </h1>
+
+                    <p>
+                        A production-ready AI system powered by transformer-based NLP
+                        models for multilingual abuse detection and real-time analytics.
+                    </p>
+                </div>
+
+                <div class="hero-right">
+
+                    <div class="preview-card">
+
+                        <div class="preview-header">
+                            <div>
+                                <strong><i>Comments Fetching</i></strong>
+                                <small>Real-time moderation</small>
+                            </div>
+                            <span class="live-pill">Live</span>
+                        </div>
+
+                        <!-- FAKE PIE CHART -->
+                        <div class="fake-pie-wrapper">
+                            <div class="fake-pie"></div>
+
+                            <div class="pie-legend">
+                                <div><span class="dot blue"></span> Safe (75%)</div>
+                                <div><span class="dot light"></span> Abusive (25%)</div>
+                            </div>
+                        </div>
+
+                        <div class="preview-stats">
+                            <div>
+                                <small>Scanned</small>
+                                <h4>1,248</h4>
+                            </div>
+                            <div>
+                                <small>Flagged</small>
+                                <h4>96</h4>
+                            </div>
+                            <div>
+                                <small>Avg. Conf.</small>
+                                <h4>0.92</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= DASHBOARD ================= -->
+        <section id="dashboard" class="section">
+            <h2>Dashboard</h2>
+
+            <div class="cards">
+                <div class="card green">
+                    <h4>Total Comments</h4>
+                    <h2 id="total-comments">0</h2>
+                </div>
+
+                <div class="card blue">
+                    <h4>Processed Videos</h4>
+                    <h2 id="processed-videos">0 / 0</h2>
+                </div>
+
+                <div class="card purple">
+                    <h4>Abusive Comments</h4>
+                    <h2 id="abusive-count">0</h2>
+                </div>
+
+                <div class="card light">
+                    <h4>Status</h4><br>
+                    <span id="status" class="status">Processing</span>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <h3>Detected Abusive Comments</h3>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                           <tr>
+                                <th>Video ID</th>
+                                <th>Comment</th>
+                                <th>Author</th>
+                                <th>Confidence</th>
+                                <th>Profile</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="section">
+            <h2>System Architecture</h2>
+        </section>
+
+        <section id="solution" class="section">
+            <h2>Proposed Solution</h2>
+        </section>
+
+        <section id="analytics" class="section">
+            <h2>Analytics</h2>
+        </section>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
